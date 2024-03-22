@@ -3,3 +3,7 @@ node_modules/
 
 # Ignore environment variable files
 .env
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
