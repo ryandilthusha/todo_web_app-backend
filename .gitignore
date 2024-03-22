@@ -1,2 +1,5 @@
+# Ignore node_modules directory. So this won't track by git and won't pushed into git repository
 node_modules/
+
+# Ignore environment variable files
 .env
