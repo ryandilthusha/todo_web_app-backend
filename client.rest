@@ -1,0 +1,32 @@
+#### This is Like a Fake Interface To GET or POST something to Database server without using Front End UI
+
+### Get tasks
+# This will fetch all tasks from the server.
+GET http://localhost:3001
+
+### Add new task
+# This will create a new task with the description provided in the JSON payload.
+POST http://localhost:3001/new HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "Test from REST Client"
+}
+
+### Remove Tasks
+# This will remove task from server
+# In the below URL number is the task id in the server(change it accordingly)
+DELETE http://localhost:3001/delete/18 HTTP/1.1
+
+
+
+### Update Task
+# This will update task in the server
+# In the below URL number is the task id in the server(change it accordingly)
+# The body of the request includes the updated description
+PUT http://localhost:3001/update/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "3n"
+}
